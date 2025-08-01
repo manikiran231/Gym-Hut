@@ -1,0 +1,261 @@
+  /* About.css */
+
+  .aboutus-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #080808;
+    background-size: cover;
+    background-position: center;
+    color: #f3f3f3;
+    text-align: center;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h1.mani {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  section {
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+
+  h2 {
+    font-size: 1.8em;
+    color: #00b894;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #dddddd;
+  }
+
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 10px;
+    text-decoration: none;
+  }
+
+  li {
+    margin-bottom: 8px;
+    color: #e0e0e0;
+    font-size: 1.05em;
+  list-style-type: none;
+    position: relative;
+  }
+
+  /* Highlighted card style for Goals and Priorities */
+  .highlight-section {
+    background-color: #121212;
+    border: 1px solid #2c2c2c;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+  }
+
+  .highlight-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  .highlight-section h2 {
+    color: #00b894;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }.core-team-section {
+  margin-top: 40px;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.team-member {
+  background-color: #111;
+  border: 1px solid #2c2c2c;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 255, 148, 0.2);
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid #00b894;
+}
+
+.team-member h4 {
+  color: #ffffff;
+  margin: 10px 0 5px;
+}
+
+.team-member p {
+  font-size: 0.95em;
+  color: #bbbbbb;
+}
+/* Testimonials Section */
+.testimonials {
+  background-color: #121212;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #2c2c2c;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  text-align: center;
+}
+
+.testimonial-scroll {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  align-items: stretch;
+  scrollbar-width: none;
+}
+
+.testimonial-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial {
+  flex: 0 0 auto;
+  background-color: #1a1a1a;
+  border-left: 4px solid #00b894;
+  padding: 20px;
+  min-width: 300px;
+  max-width: 400px;
+  font-style: italic;
+  color: #dddddd;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  height: 150px;
+}
+
+.testimonial p {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.testimonial strong {
+  color: #ffffff;
+}
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .aboutus-container {
+    padding: 15px;
+  }
+
+  h1.mani {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .team-grid {
+    gap: 1.5rem;
+  }
+
+  .testimonial {
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .testimonial {
+    height: auto;
+    padding: 15px;
+  }
+
+  .testimonial-scroll {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .highlight-section {
+    padding: 15px;
+  }
+
+  h1.mani {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  p,
+  li {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutus-container {
+    padding: 10px;
+  }
+
+  h1.mani {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  .team-member img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .testimonial {
+    min-width: 90%;
+    font-size: 0.95em;
+  }
+
+  .highlight-section {
+    margin-bottom: 20px;
+  }
+}

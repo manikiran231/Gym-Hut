@@ -1,0 +1,135 @@
+.content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    font-family: 'Segoe UI', sans-serif;
+    color: #1f2937;
+  }
+  
+  .content h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #111827;
+  }
+  
+  .content p {
+    font-weight: 600;
+    margin-top: 20px;
+    color: #374151;
+  }
+  
+  .content ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 5px;
+  }
+  
+  .content ul li {
+    background-color: #f3f4f6;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    color: #111827;
+    font-weight: 500;
+  }
+  
+  .content button {
+    background-color: #2563eb;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .content button:hover {
+    background-color: #1e40af;
+  }
+  .trainer-profile {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    color: #1f2937;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .trainer-profile h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  
+  .trainer-profile section {
+    margin-top: 20px;
+  }
+  
+  .trainer-profile h3 {
+    font-size: 1.2rem;
+    color: #374151;
+    margin-bottom: 8px;
+  }
+  
+  .trainer-profile ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .trainer-profile li {
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #111827;
+  }
+  
+  .icon {
+    color: #6b7280;
+  }
+  
+  .success {
+    color: #10b981;
+  }
+  
+  .warning {
+    color: #f59e0b;
+  }
+  
+  .back-bt {
+    background-color: #e5e7eb;
+    color: #111827;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  .back-btn:hover {
+    background-color: #d1d5db;
+  }
+  .trainer-profile .remove-trainer-btn {
+  background-color: #e53e3e;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  margin-top: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.trainer-profile .remove-trainer-btn:hover {
+  background-color: #c53030;
+}

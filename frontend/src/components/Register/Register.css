@@ -1,0 +1,181 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.register-container {
+  max-width: 450px;
+  margin: 50px auto;
+  padding: 25px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header p {
+  color: #555;
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+}
+
+.password-container input {
+  flex: 1;
+}
+
+.password-container button {
+  margin-left: 10px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.password-container button:hover {
+  text-decoration: underline;
+}
+
+.register-button {
+  padding: 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.register-button:hover {
+  background-color: #0056b3;
+}
+
+.register-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-input {
+  width: 100%;
+  padding-right: 2.5rem;
+  box-sizing: border-box;
+}
+
+.eye-icon {
+  position: absolute;
+  top:37%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .register-container {
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  .register-button {
+    font-size: 0.95em;
+  }
+
+  .eye-icon {
+    font-size: 1rem;
+    right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-container {
+    margin: 30px 10px;
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.6em;
+  }
+
+  form input,
+  .register-button {
+    font-size: 0.95em;
+    padding: 9px;
+  }
+
+  .signup-link {
+    font-size: 0.95em;
+  }
+
+  .password-container button {
+    padding: 8px;
+    font-size: 0.9em;
+  }
+
+  .eye-icon {
+    font-size: 0.9rem;
+  }
+}
