@@ -21,7 +21,7 @@ function Forgot() {
     }
 
     try {
-      const response = await axios.post('http://localhost:8000/api/auth/forgot-password', {
+      const response = await axios.post('https://gymhut-backend-sqrx.onrender.com/api/auth/forgot-password', {
         username,
         gymcode,
         userType,

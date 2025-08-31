@@ -15,7 +15,7 @@ console.log("✅ Loaded MONGODB_URI:", process.env.MONGODB_URI);
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: ['http://localhost:5173'],
+    origin: ['https://gym-hut-2026.vercel.app/'],
     credentials: true
 }));
 const PORT = process.env.PORT || 8000;
@@ -29,7 +29,7 @@ if (!MONGODB_URI) {
 
 // ✅ Middleware: Allow JSON & Enable CORS
 app.use(cors({
-    origin: ["http://localhost:5173", "http://localhost:8000"],
+    origin: ["https://gym-hut-2026.vercel.app/", "http://localhost:8000"],
     credentials: true,  // Allow cookies & auth headers
     methods: ["GET", "POST", "PUT", "DELETE"], // Allow specific HTTP methods
 }));

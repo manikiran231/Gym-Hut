@@ -16,7 +16,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/auth/admin', {
+      const response = await axios.post('https://gymhut-backend-sqrx.onrender.com/api/auth/admin', {
         username,
         password,
       });

@@ -19,7 +19,7 @@ function AdminDashboard() {
 
   const fetchGyms = async () => {
     try {
-      const res = await fetch("http://localhost:8000/api/gyms"); // update URL if hosted
+      const res = await fetch("https://gymhut-backend-sqrx.onrender.com/api/gyms"); // update URL if hosted
       const data = await res.json();
       setGyms(data);
     } catch (err) {
@@ -39,7 +39,7 @@ function AdminDashboard() {
     if (!confirm) return;
 
     try {
-      await fetch(`http://localhost:8000/api/gyms/approve/${gymcode}`, {
+      await fetch(`https://gymhut-backend-sqrx.onrender.com/api/gyms/approve/${gymcode}`, {
         method: "PATCH"
       });
       fetchGyms(); // Refresh data
@@ -53,7 +53,7 @@ function AdminDashboard() {
     if (!confirm) return;
 
     try {
-      await fetch(`http://localhost:8000/api/gyms/reject/${gymcode}`, {
+      await fetch(`https://gymhut-backend-sqrx.onrender.com/api/gyms/reject/${gymcode}`, {
         method: "DELETE"
       });
       fetchGyms(); // Refresh data

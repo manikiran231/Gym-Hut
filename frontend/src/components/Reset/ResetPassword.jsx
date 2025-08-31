@@ -65,7 +65,7 @@ function ResetPassword() {
 
         console.log("Submitting payload:", payload);
         try {
-            const res = await axios.post("http://localhost:8000/api/auth/reset-password", payload);
+            const res = await axios.post("https://gymhut-backend-sqrx.onrender.com/api/auth/reset-password", payload);
             toast.success(res.data.message || "Password reset successful!");
                 setTimeout(() => {
                 navigate("/login");

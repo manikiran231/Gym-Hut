@@ -28,7 +28,7 @@ function AddTrainerForm({ onSubmit, onCancel }) {
       return;
     }
     try{
-      const res = await fetch("http://localhost:8000/api/trainers/add", {
+      const res = await fetch("https://gymhut-backend-sqrx.onrender.com/api/trainers/add", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({

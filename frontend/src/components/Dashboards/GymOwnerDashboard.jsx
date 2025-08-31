@@ -38,7 +38,7 @@ function GymOwnerDashboard() {
         return;
       }
       try {
-        const res = await fetch(`http://localhost:8000/api/gym/${storedUser.gymcode}`);
+        const res = await fetch(`https://gymhut-backend-sqrx.onrender.com/api/gym/${storedUser.gymcode}`);
         const data = await res.json();
         if (!res.ok) throw new Error(data.error || "Failed to fetch gym data");
         setGymData(data);
@@ -66,7 +66,7 @@ function GymOwnerDashboard() {
     }
 
     try {
-      const res = await fetch("http://localhost:8000/api/members/add", {
+      const res = await fetch("https://gymhut-backend-sqrx.onrender.com/api/members/add", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...memberForm, gymcode: storedUser.gymcode }),
@@ -97,7 +97,7 @@ function GymOwnerDashboard() {
     if (!window.confirm(`Remove member "${username}"?`)) return;
     const storedUser = JSON.parse(localStorage.getItem("gymUser") || sessionStorage.getItem("gymUser"));
     try {
-      const res = await fetch(`http://localhost:8000/api/members/delete/${storedUser.gymcode}/${username}`, {
+      const res = await fetch(`https://gymhut-backend-sqrx.onrender.com/api/members/delete/${storedUser.gymcode}/${username}`, {
         method: "DELETE"
       });
       const result = await res.json();
@@ -131,7 +131,7 @@ function GymOwnerDashboard() {
 
   const handleMarkPaid = async (username) => {
     try {
-      const res = await fetch(`http://localhost:8000/api/members/update-status/${username}`, {
+      const res = await fetch(`https://gymhut-backend-sqrx.onrender.com/api/members/update-status/${username}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ status: "Active" })

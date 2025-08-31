@@ -25,7 +25,7 @@ function Login() {
 
     try {
 
-      const response = await axios.post('http://localhost:8000/api/auth/login', {
+      const response = await axios.post('https://gymhut-backend-sqrx.onrender.com/api/auth/login', {
         username,
         password,
         gymcode,

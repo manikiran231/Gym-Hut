@@ -19,7 +19,7 @@ function TrainerProfile({ trainer, onBack, onRemove }) {
     const fetchAssignedMembers = async () => {
       const storedUser = JSON.parse(localStorage.getItem("gymUser") || sessionStorage.getItem("gymUser"));
       try {
-        const res = await fetch(`http://localhost:8000/api/trainers/${storedUser.gymcode}/${trainer.username}/members`);
+        const res = await fetch(`https://gymhut-backend-sqrx.onrender.com/api/trainers/${storedUser.gymcode}/${trainer.username}/members`);
         const data = await res.json();
         if (res.ok) {
           setStudents(data);
@@ -38,7 +38,7 @@ function TrainerProfile({ trainer, onBack, onRemove }) {
     if (!window.confirm(`Are you sure you want to remove ${trainer.name}?`)) return;
     const storedUser = JSON.parse(localStorage.getItem("gymUser") || sessionStorage.getItem("gymUser"));
     try {
-      const res = await fetch(`http://localhost:8000/api/trainers/delete/${storedUser.gymcode}/${trainer.username}`, {
+      const res = await fetch(`https://gymhut-backend-sqrx.onrender.com/api/trainers/delete/${storedUser.gymcode}/${trainer.username}`, {
         method: "DELETE"
       });
       const result = await res.json();

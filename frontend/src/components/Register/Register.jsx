@@ -35,7 +35,7 @@ function Register() {
 
 
     try {
-      const response = await axios.post("http://localhost:8000/register", userData);
+      const response = await axios.post("https://gymhut-backend-sqrx.onrender.com/register", userData);
 
       if (response.status === 201 && response.data.message === "Gym registration started") {
         toast.success("Registration started", {

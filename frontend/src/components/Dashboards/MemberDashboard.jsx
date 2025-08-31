@@ -45,7 +45,7 @@ function MemberDashboard() {
 
     const fetchProfile = async () => {
       try {
-        const res = await fetch(`http://localhost:8000/api/member/${storedUser.gymcode}/${storedUser.username}`);
+        const res = await fetch(`https://gymhut-backend-sqrx.onrender.com/api/member/${storedUser.gymcode}/${storedUser.username}`);
         const data = await res.json();
 
         if (!res.ok) throw new Error(data.error || "Failed to fetch member data");

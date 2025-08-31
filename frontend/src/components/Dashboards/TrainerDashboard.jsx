@@ -25,7 +25,7 @@ function TrainerDashboard() {
 
     const fetchTrainerProfile = async () => {
       try {
-        const res = await fetch(`http://localhost:8000/api/trainer/${storedUser.gymcode}/${storedUser.username}`);
+        const res = await fetch(`https://gymhut-backend-sqrx.onrender.com/api/trainer/${storedUser.gymcode}/${storedUser.username}`);
         const data = await res.json();
 
         if (!res.ok) throw new Error(data.error || "Failed to fetch trainer data");
